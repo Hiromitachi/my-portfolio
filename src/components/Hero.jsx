@@ -99,7 +99,7 @@ const Hero = () => {
               {/* Profile image */}
               <div className="w-80 h-96 bg-gradient-to-br from-blue-200 to-blue-400 rounded-2xl mx-auto relative overflow-hidden shadow-2xl">
                 <img 
-                  src="/image copy.png" 
+                  src="/image.png" 
                   alt="Sumaiya Kalim"
                   className="w-full h-full object-cover"
                 />
