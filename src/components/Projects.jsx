@@ -62,8 +62,8 @@ const Projects = () => {
         "Designed interactive UI with Figma and Canva",
         "Result: Boosted user engagement with gamified learning"
       ],
-      liveLink: "#",
-      githubLink: "#",
+      liveLink: "https://hiromitachi.github.io/quiz-app/",
+      githubLink: "https://hiromitachi.github.io/quiz-app/",
       color: "from-purple-500 to-pink-600"
     }
   ]
