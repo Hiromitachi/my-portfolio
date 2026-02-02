@@ -5,6 +5,38 @@ import { ExternalLink, Github, Code, Palette, Database } from 'lucide-react'
 const Projects = () => {
   const projects = [
     {
+      title: "Campus Connect",
+      subtitle: "College Community Platform",
+      description: "A comprehensive networking and communication platform for college students and faculty. Features real-time messaging, event management, resource sharing, and community engagement tools built with modern web technologies.",
+      image: "https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600",
+      technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+      features: [
+        "Real-time messaging and notifications using Socket.io",
+        "Event management system with calendar integration",
+        "Resource sharing and collaborative learning features",
+        "Result: Enhanced campus connectivity and student engagement"
+      ],
+      liveLink: "https://campus-connect-phi-six.vercel.app/",
+      githubLink: "https://github.com/Hiromitachi/campus-connect",
+      color: "from-cyan-500 to-blue-600"
+    },
+    {
+      title: "Snackify",
+      subtitle: "Food Ordering & Discovery Platform",
+      description: "A modern food ordering and discovery web application with an intuitive interface. Features menu browsing, cart management, and seamless ordering experience with responsive design deployed on GitHub Pages.",
+      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600",
+      technologies: ["React", "Vite", "CSS", "JavaScript"],
+      features: [
+        "Built with React and Vite for optimal performance",
+        "Responsive design with smooth animations and transitions",
+        "Interactive menu browsing and cart management",
+        "Result: Successfully deployed on GitHub Pages with full functionality"
+      ],
+      liveLink: "https://snackifyy.netlify.app/",
+      githubLink: "https://github.com/Hiromitachi/snackify",
+      color: "from-amber-500 to-orange-600"
+    },
+    {
       title: "Journal Web App",
       subtitle: "Aesthetic & Responsive Web Application",
       description: "A full-stack therapeutic journaling application built with Express.js, Node.js, and MongoDB. Features intuitive UI with EJS and CSS, secure routing, and full CRUD functionality for managing journal entries.",
@@ -107,25 +139,25 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-80`}></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex space-x-4">
-                    <a 
-                      href={project.liveLink} 
-                      target="_blank" 
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-white rounded-full hover:scale-110 transition-transform duration-300"
                     >
                       <ExternalLink className="w-5 h-5 text-gray-700" />
                     </a>
-                    <a 
-                      href={project.githubLink} 
-                      target="_blank" 
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-white rounded-full hover:scale-110 transition-transform duration-300"
                     >
@@ -144,7 +176,7 @@ const Projects = () => {
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="flex items-center space-x-1 px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
                     >
