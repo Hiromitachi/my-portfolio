@@ -127,7 +127,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -138,7 +138,7 @@ const Projects = () => {
               className="card overflow-hidden group"
             >
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative overflow-hidden" style={{ aspectRatio: '9/16' }}>
                 <img
                   src={project.image}
                   alt={project.title}
@@ -168,7 +168,7 @@ const Projects = () => {
               </div>
 
               {/* Project Content */}
-              <div className="p-6">
+              <div className="p-5">
                 <h3 className="text-xl font-bold text-dark mb-2">{project.title}</h3>
                 <h4 className="text-primary font-semibold mb-3">{project.subtitle}</h4>
                 <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
