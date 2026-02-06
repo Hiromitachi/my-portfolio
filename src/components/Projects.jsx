@@ -64,7 +64,7 @@ const Projects = () => {
         "Technologies: Node.js, Express.js, MongoDB, responsive front-end",
         "Result: Successfully deployed and showcased in a live hackathon"
       ],
-      liveLink: "https://alumniconnect-innovate-x.sipun.online/signup",
+      liveLink: "https://my-alumni-pratikksahoos-projects.vercel.app/",
       githubLink: "#",
       color: "from-green-500 to-teal-600"
     },
