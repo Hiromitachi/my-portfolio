@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Update this if your repo name is different
+// For Netlify deployment (root domain)
 export default defineConfig({
-  base: '/my-portfolio/',
+  base: '/',
   plugins: [react()],
 })
